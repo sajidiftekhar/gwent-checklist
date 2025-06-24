@@ -82,8 +82,8 @@ function CheckList({ cardData }: { cardData: any[] }) {
             columnBufferPx={100}
             density="comfortable"
             disableColumnMenu
-            onColumnResize={(params) => console.log(params)}
-            onSortModelChange={(params) => console.log(params)}
+            onColumnResize={(_) => {}}
+            onSortModelChange={(_) => {}}
             onRowSelectionModelChange={handleRowSelect}
             slots={SLOTS}
             keepNonExistentRowsSelected

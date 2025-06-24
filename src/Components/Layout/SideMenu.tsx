@@ -33,14 +33,8 @@ const mainListItems = [
         icon: <StyleIcon />,
         to: '/checklist',
     },
-    // { text: 'List of cards', icon: <PeopleRoundedIcon />, to: 'cards' },
 ]
 
-// const secondaryListItems = [
-//     { text: 'Settings', icon: <SettingsRoundedIcon /> },
-//     { text: 'About', icon: <InfoRoundedIcon /> },
-//     { text: 'Feedback', icon: <HelpRoundedIcon /> },
-// ]
 
 function SideMenu() {
     return (
@@ -106,54 +100,8 @@ function SideMenu() {
                             </ListItemButton>
                         ))}
                     </List>
-                    {/*<List dense>*/}
-                    {/*    {secondaryListItems.map((item, index) => (*/}
-                    {/*        <ListItem*/}
-                    {/*            key={index}*/}
-                    {/*            disablePadding*/}
-                    {/*            sx={{ display: 'block' }}*/}
-                    {/*        >*/}
-                    {/*            <ListItemButton>*/}
-                    {/*                <ListItemIcon>{item.icon}</ListItemIcon>*/}
-                    {/*                <ListItemText primary={item.text} />*/}
-                    {/*            </ListItemButton>*/}
-                    {/*        </ListItem>*/}
-                    {/*    ))}*/}
-                    {/*</List>*/}
                 </Stack>
             </Box>
-            {/*<Stack*/}
-            {/*    direction="row"*/}
-            {/*    sx={{*/}
-            {/*        p: 2,*/}
-            {/*        gap: 1,*/}
-            {/*        alignItems: 'center',*/}
-            {/*        borderTop: '1px solid',*/}
-            {/*        borderColor: 'divider',*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*    <Avatar*/}
-            {/*        sizes="small"*/}
-            {/*        alt="Riley Carter"*/}
-            {/*        src="/static/images/avatar/7.jpg"*/}
-            {/*        sx={{ width: 36, height: 36 }}*/}
-            {/*    />*/}
-            {/*    <Box sx={{ mr: 'auto' }}>*/}
-            {/*        <Typography*/}
-            {/*            variant="body2"*/}
-            {/*            sx={{ fontWeight: 500, lineHeight: '16px' }}*/}
-            {/*        >*/}
-            {/*            Riley Carter*/}
-            {/*        </Typography>*/}
-            {/*        <Typography*/}
-            {/*            variant="caption"*/}
-            {/*            sx={{ color: 'text.secondary' }}*/}
-            {/*        >*/}
-            {/*            riley@email.com*/}
-            {/*        </Typography>*/}
-            {/*    </Box>*/}
-            {/*    <OptionsMenu />*/}
-            {/*</Stack>*/}
         </Drawer>
     )
 }

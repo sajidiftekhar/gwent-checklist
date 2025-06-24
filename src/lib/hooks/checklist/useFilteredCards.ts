@@ -26,13 +26,6 @@ const useFilteredCards = (cards: GwentCard[]) => {
             !filters.territory ||
             card.territory === transformGameTerritory(filters.territory)
 
-        console.log(
-            !filters.expansion ||
-                card.expansion.toLowerCase() ===
-                    filters.expansion.toLowerCase(),
-            card.expansion,
-            filters.expansion
-        )
         const matchesExpansion =
             !filters.expansion ||
             card.expansion.toLowerCase() === filters.expansion.toLowerCase()
