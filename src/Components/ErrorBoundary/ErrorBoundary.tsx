@@ -10,7 +10,7 @@ function ErrorBoundary() {
     const error: ErrorBoundaryType = useRouteError() as ErrorBoundaryType;
 
     return (
-        <div>We ran into an error {error.message}</div>
+        <div>We ran into an error {JSON.stringify(error)}</div>
     );
 }
 
