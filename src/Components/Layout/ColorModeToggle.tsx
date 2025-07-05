@@ -3,7 +3,7 @@ import DarkModeIcon from '@mui/icons-material/DarkModeRounded'
 import LightModeIcon from '@mui/icons-material/LightModeRounded'
 import { type IconButtonOwnProps } from '@mui/material/IconButton'
 import { useColorScheme } from '@mui/material/styles'
-import MenuButton from '../../Components/Layout/MenuButton.tsx'
+import MenuButton from './MenuButton.tsx'
 
 function ColorModeToggle(props: IconButtonOwnProps) {
     const { mode, systemMode, setMode } = useColorScheme()

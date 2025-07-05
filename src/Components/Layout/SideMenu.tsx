@@ -3,7 +3,7 @@ import MuiDrawer, { drawerClasses } from '@mui/material/Drawer'
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
-import SelectContent from './SelectContent'
+import SideManuSelect from './SideManuSelect.tsx'
 import { memo } from 'react'
 import List from '@mui/material/List'
 import ListItemButton from '@mui/material/ListItemButton'
@@ -54,7 +54,7 @@ function SideMenu() {
                     p: 1.5,
                 }}
             >
-                <SelectContent />
+                <SideManuSelect />
             </Box>
             <Divider />
             <Box

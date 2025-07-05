@@ -23,7 +23,7 @@ const ListItemAvatar = styled(MuiListItemAvatar)({
     marginRight: 12,
 })
 
-export default function SelectContent() {
+export default function SideManuSelect() {
     const [company, setCompany] = useState('')
 
     const handleChange = (event: SelectChangeEvent) => {

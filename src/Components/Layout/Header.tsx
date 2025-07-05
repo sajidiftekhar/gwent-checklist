@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack'
 import NavbarBreadcrumbs from './NavbarBreadcrumbs'
-import ColorModeIconDropdown from '../../lib/theme/ColorModeToggle.tsx'
+import ColorModeIconDropdown from './ColorModeToggle.tsx'
 
 export default function Header() {
     return (
