@@ -8,6 +8,7 @@ import SideMenu from './Components/Layout/SideMenu'
 
 import AppTheme from './lib/AppTheme'
 import MainContent from './Components/Layout/MainContent.tsx'
+import Copyright from './Components/Layout/Copyright.tsx'
 
 function App() {
     return (
@@ -37,6 +38,7 @@ function App() {
                     >
                         <Header />
                         <MainContent />
+                        <Copyright sx={{ my: 4 }} />
                     </Stack>
                 </Box>
             </Box>

@@ -31,7 +31,7 @@ function CheckListPage() {
     return (
         <div>
             <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
-                Details
+                Gwent Card Check List
             </Typography>
             <div style={{ height: '75vh' }}>
                 <CardFilters />
