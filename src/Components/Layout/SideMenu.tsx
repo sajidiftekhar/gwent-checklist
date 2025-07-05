@@ -12,6 +12,7 @@ import ListItemText from '@mui/material/ListItemText'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
 import StyleIcon from '@mui/icons-material/Style'
 import { NavLink } from 'react-router'
+import { getRoutePath, ROUTES } from '../../lib/config/routes.ts'
 
 const drawerWidth = 240
 
@@ -31,7 +32,7 @@ const mainListItems = [
     {
         text: 'Gwent Checklist',
         icon: <StyleIcon />,
-        to: '/checklist',
+        to: getRoutePath(ROUTES.CHECKLIST),
     },
 ]
 

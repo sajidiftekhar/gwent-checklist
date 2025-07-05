@@ -5,19 +5,21 @@ import CheckListPage from '../Pages/CheckList/CheckListPage.tsx'
 import ErrorBoundary from '../Components/ErrorBoundary/ErrorBoundary.tsx'
 import App from '../App.tsx'
 import PageLoader from '../Components/Loaders/PageLoader.tsx'
-
-const basename = import.meta.env.VITE_BASENAME || '/'
+import ROUTES, { getRouteRoot } from './config/routes.ts'
 
 export const router = createBrowserRouter([
     {
-        path: basename,
+        path: getRouteRoot(ROUTES.HOME),
         Component: App,
         ErrorBoundary: ErrorBoundary,
         loader: PageLoader,
         children: [
             { index: true, Component: HomePage },
-            { path: 'cards', Component: CardsPage },
-            { path: 'checklist', Component: CheckListPage },
+            { path: getRouteRoot(ROUTES.CARDS), Component: CardsPage },
+            {
+                path: getRouteRoot(ROUTES.CHECKLIST),
+                Component: CheckListPage,
+            },
         ],
     },
 ])
