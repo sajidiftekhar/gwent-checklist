@@ -6,9 +6,11 @@ import ErrorBoundary from '../Components/ErrorBoundary/ErrorBoundary.tsx'
 import App from '../App.tsx'
 import PageLoader from '../Components/Loaders/PageLoader.tsx'
 
+const basename = import.meta.env.VITE_BASENAME || '/'
+
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: basename,
         Component: App,
         ErrorBoundary: ErrorBoundary,
         loader: PageLoader,

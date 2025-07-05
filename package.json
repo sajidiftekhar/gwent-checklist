@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:gh-pages": "vite build --mode gh-pages",
     "lint": "eslint .",
     "preview": "vite preview",
     "download-card-pictures": "ts-node scripts/download-card-pictures.cjs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/sajidiftekhar/gwent-checklist.git"
+    "predeploy": "npm run build:gh-pages",
+    "deploy": "gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/sajidiftekhar/gwent-checklist.git",
+    "deploy:local": "gh-pages -d dist -r git@github.com:sajidiftekhar/gwent-checklist.git"
   },
   "engines": {
     "npm": ">=8.0.0",
