@@ -27,3 +27,6 @@ jobs:
 
       - name: Build and Deploy 🚀
         run: npm run deploy
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            NODE_ENV: production
