@@ -1,5 +1,5 @@
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
 
 export default function Copyright(props: any) {
     return (
@@ -15,11 +15,11 @@ export default function Copyright(props: any) {
             ]}
         >
             {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
+            <Link color="inherit" href="https://sajidiftekhar.com/">
                 Sajid Iftekhar
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
-    );
+    )
 }
