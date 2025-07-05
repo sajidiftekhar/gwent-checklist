@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "download-card-pictures": "ts-node scripts/download-card-pictures.cjs",
-    "deploy": "vite build && vite-gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "engines": {
     "npm": ">=8.0.0",
