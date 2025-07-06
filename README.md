@@ -1,6 +1,10 @@
 # Witcher 3: Gwent Checklist
 
-You can set up the project easily using the following command:
+## Live site:
+The live project is available here: [gwent.sajidiftekhhar.com](https://gwent.sajidiftekhar.com)
+
+## Development
+You can easily run the project locally by cloning the repository and running the following commands:
 
 ```bash
 npm ci
