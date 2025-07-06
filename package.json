@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "download-card-pictures": "ts-node scripts/download-card-pictures.cjs",
-    "predeploy": "vite build --mode gh-pages",
+    "predeploy": "vite build --mode gh-pages && npm run postbuild",
     "deploy": "gh-pages -d dist -b live -u 'Sajid Iftekhar <19746550+sajidiftekhar@users.noreply.github.com>' -r https://x-access-token:${GITHUB_TOKEN}@github.com/sajidiftekhar/gwent-checklist.git",
     "deploy:local": "gh-pages -d dist -r git@github.com:sajidiftekhar/gwent-checklist.git"
   },
